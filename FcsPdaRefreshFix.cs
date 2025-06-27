@@ -20,7 +20,7 @@ class FcsPdaRefreshPatch
     {
         foreach (Canvas canvas in Object.FindObjectsOfType<Canvas>())
         {
-            if (canvas.isRootCanvas)
+            if (canvas.isRootCanvas && canvas.enabled)
             {
                 canvas.enabled = false;
                 canvas.enabled = true;
